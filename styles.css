@@ -1,5 +1,54 @@
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url(./text/OpenDyslexic3-Regular.ttf);
+}
+
+* {
+    font-family: OpenDyslexic, sans-serif ; 
+}
+
 body {
     margin: 0;
+    text-align: justify;
+}
+
+.background {
+    background-image: url(./images/temp_background.jpg);
+    height: fit-content;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-attachment: fixed;
+  }
+
+.background-block {
+    background-color: white;
+    height: 100%;
+    width: 60%;
+    margin: 0px auto;
+    padding: 1.5% 1%;
+    box-shadow: 2px 2px 5px tomato;
+}
+
+h1 {
+    margin-top: 0%;
+}
+
+h1, h2 {
     background-color: pink;
+    color: blueviolet;
     text-align: center;
+    padding: 1%;
+    box-shadow: 2px 2px 5px tomato;
+    text-shadow: 1px 1px 1px tomato;
+    border-radius: 30px/50%;
+}
+
+img {
+    float: right;
+    padding: 1%;
+}
+
+.topad {
+    margin: 20px;
 }
