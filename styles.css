@@ -19,13 +19,27 @@ body {
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
     background-attachment: fixed;
-  }
+}
 
-.background-block {
+.content-wrapper {
+    width: 85%;
+    margin: 0px auto;
+}
+
+.text-block {
     background-color: white;
     height: 100%;
-    width: 60%;
-    margin: 0px auto;
+    width: 75%;
+    float: left;
+    padding: 1.5% 1%;
+    box-shadow: 2px 2px 5px tomato;
+}
+
+.navigation-block {
+    background-color: white;
+    height: 100%;
+    width: 15%;
+    float: right;
     padding: 1.5% 1%;
     box-shadow: 2px 2px 5px tomato;
 }
@@ -45,10 +59,48 @@ h1, h2 {
 }
 
 img {
+    max-width: auto;
+    max-height: 100%;
+    display: block;
     float: right;
-    padding: 1%;
+}
+
+.cat {
+    height: 200px;
+    margin: 20px;
 }
 
 .topad {
     margin: 20px;
+}
+
+/* width for phone screen */
+@media (min-width: 576px) {
+    
+}
+
+/* width for regular screen */
+@media (min-width: 1200px) {
+    
+}
+
+.page {
+    color: white;
+}
+
+
+.sidebar-menu {
+    background-color: black;
+}
+
+.sidebar-menu ul {
+    list-style-type: none;
+
+}
+
+.sidebar-menu ul li {
+    position: relative;
+    display: inline;
+    margin: 0 0 0 10px;
+
 }
