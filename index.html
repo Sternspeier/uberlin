@@ -1,14 +1,54 @@
+<!--
+    The frontpage should always display the latest story
+    next should be a list that can load other stories and 
+-->
+
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=devise-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <h1>Hello, World</h1>
-        <p>Well time, she did as time, she does</p>
-        <p>She passed along her way</p>
-        <p>And dawn she crept like a frightened girl</p>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devise-width, initial-scale=1.0">
+    <title>UBERLIN</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="index.js"></script>
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#DivContent").load("header.html"); 
+    });
+    </script>
+</head>
+
+<body class="background">
+
+    <div id="DivContent"></div>
+
+    <div class="content-wrapper">
+
+        <div class="navigation-block">
+            navigate here
+        </div>
+
+        <div class="text-block">
+            <h1>Titel vom Text</h1>
+            <section>
+                <p class="topad">In the distant future of <script>trueDate();</script></p>
+                <p class="topad">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                    dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                    consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+                    diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                    takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                <p class="topad">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                    dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                    consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+                    diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                    takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                </section>
+        </div>
+    </div>
+</body>
+
 </html>
