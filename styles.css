@@ -1,3 +1,13 @@
+/* Pink: R:211 G:65 B:87 or #d34157 */
+/* Darkblue: R:11 G:11 B:43 or #0b0b2b*/
+
+:root {
+    --mypink: #d34157;
+    --myblue: #0b0b2b;
+    --mygray: #242526;
+    --mywhite: #c1e3e6;
+}
+
 @font-face {
     font-family: 'OpenDyslexic';
     src: url(./text/OpenDyslexic3-Regular.ttf);
@@ -22,52 +32,54 @@ body {
 }
 
 .content-wrapper {
-    width: 85%;
-    margin: 0px auto;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .text-block {
-    background-color: white;
     height: 100%;
-    width: 75%;
+    width: 80%;
     float: left;
-    padding: 1.5% 1%;
-    box-shadow: 2px 2px 5px tomato;
+    padding: 0% 0%;
 }
 
+
+.text-block h1 {
+    background-color: var(--myblue);
+    color: var(--mypink);
+    text-align: center;
+    padding: 1%;
+    box-shadow: 2px 2px 5px black;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.text-block section {
+    background-color: var(--mygray);
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 10px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.text-block section p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-top: 1%;
+    color: var(--mywhite);
+}
+
+
 .navigation-block {
-    background-color: white;
+    background-color: var(--myblue);
+    color: var(--mypink);
     height: 100%;
     width: 15%;
     float: right;
     padding: 1.5% 1%;
-    box-shadow: 2px 2px 5px tomato;
-}
-
-h1 {
-    margin-top: 0%;
-}
-
-h1, h2 {
-    background-color: pink;
-    color: blueviolet;
-    text-align: center;
-    padding: 1%;
-    box-shadow: 2px 2px 5px tomato;
-    text-shadow: 1px 1px 1px tomato;
-    border-radius: 30px/50%;
-}
-
-img {
-    max-width: auto;
-    max-height: 100%;
-    display: block;
-    float: right;
-}
-
-.cat {
-    height: 200px;
-    margin: 20px;
+    box-shadow: 2px 2px 5px black;
 }
 
 .topad {
@@ -76,31 +88,53 @@ img {
 
 /* width for phone screen */
 @media (min-width: 576px) {
-    
 }
 
 /* width for regular screen */
 @media (min-width: 1200px) {
-    
 }
 
 .page {
-    color: white;
+    color: var(--myblue);
 }
 
 
 .sidebar-menu {
-    background-color: black;
+    background-color: var(--myblue);
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .sidebar-menu ul {
     list-style-type: none;
-
+    margin-top: 0;
 }
 
 .sidebar-menu ul li {
     position: relative;
     display: inline;
     margin: 0 0 0 10px;
+}
 
+.sidebar-menu ul li a:link {
+    color: var(--mypink);
+    text-decoration: none;
+}
+
+.sidebar-menu ul li a:visited {
+    color: var(--mypink);
+    text-decoration: none;
+}
+
+
+.sidebar-menu ul li a:hover {
+    color: var(--mywhite);
+    text-decoration: none;
+}
+
+
+.center {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
 }
