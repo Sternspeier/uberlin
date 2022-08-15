@@ -1,5 +1,7 @@
+import "jquery";
 
 function trueDate(){
+    const dateElement = document.getElementById("trueDate");
     const d = new Date();
-    document.write(d.getFullYear() + 1);
-}
+    dateElement.innerHTML = String(d.getFullYear() + 1);
+};
