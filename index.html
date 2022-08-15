@@ -15,14 +15,17 @@
     <script src="jquery.js"></script> 
     <script> 
     $(function(){
-      $("#DivContent").load("header.html"); 
+      $("#Header").load("header.html"); 
+    });
+    $(function(){
+      $("#Content").load("text/text1.html");
     });
     </script>
 </head>
 
 <body class="background">
 
-    <div id="DivContent"></div>
+    <div id="Header"></div>
 
     <div class="content-wrapper">
 
@@ -31,22 +34,8 @@
         </div>
 
         <div class="text-block">
-            <h1>Titel vom Text</h1>
-            <section>
-                <p class="topad">In the distant future of <script>trueDate();</script></p>
-                <p class="topad">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-                    dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-                    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                    consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-                    diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                    takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                <p class="topad">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-                    dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-                    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-                    consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-                    diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                    takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                </section>
+            <section class="topad" id="Content">
+            </section>
         </div>
     </div>
 </body>
