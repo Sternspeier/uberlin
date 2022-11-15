@@ -1,4 +1,4 @@
-/* Pink: R:211 G:65 B:87 or #d34157 */
+/* Pink: R:211 G:65 B:87 or #d34157 maybe change to #ff91af*/
 /* Darkblue: R:11 G:11 B:43 or #0b0b2b*/
 
 :root {
@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: 'OpenDyslexic';
-    src: url(./text/OpenDyslexic3-Regular.ttf);
+    src: url(./assets/fonts/OpenDyslexic3-Regular.ttf);
 }
 
 * {
@@ -23,7 +23,7 @@ body {
 }
 
 .background {
-    background-image: url(./images/temp_background.jpg);
+    background-image: url(/assets/img/temp_background.jpg);
     height: fit-content;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -84,6 +84,11 @@ body {
 
 .topad p {
     margin: 20px;
+}
+
+.topad h2 {
+    margin: 30px;
+    color: var(--mywhite)
 }
 
 /* width for phone screen */
