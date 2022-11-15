@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import * as $ from 'jquery';
 
 @Component({
@@ -7,6 +7,7 @@ import * as $ from 'jquery';
   styleUrls: ['./textloader.component.css']
 })
 export class TextloaderComponent implements OnInit {
+  @Input() textSource: string = "";
 
   tDate: string = this.makeDate();
 
@@ -17,7 +18,8 @@ export class TextloaderComponent implements OnInit {
   }
 
   getText() {
-    $("#Content").load("/assets/text/sounding_the_trumpet.html");
+    "/assets/text/sounding_the_trumpet.html"
+    $("#Content").load( this.textSource );
   }
 
   makeDate(): string {
