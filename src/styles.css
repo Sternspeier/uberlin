@@ -2,7 +2,7 @@
 /* Darkblue: R:11 G:11 B:43 or #0b0b2b*/
 
 :root {
-    --mypink: #d34157;
+    --mypink: #fb038f;
     --myblue: #0b0b2b;
     --mygray: #242526;
     --mywhite: #c1e3e6;
@@ -23,7 +23,7 @@ body {
 }
 
 .background {
-    background-image: url(./assets/img/temp_background.jpg);
+    background-image: url(./assets/img/temp_background.png);
     height: fit-content;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
