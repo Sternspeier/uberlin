@@ -1,0 +1,15 @@
+.navigation-block a:link {
+    color: var(--mypink);
+    text-decoration: none;
+}
+
+.navigation-block a:visited {
+    color: var(--mypink);
+    text-decoration: none;
+}
+
+
+.navigation-block a:hover {
+    color: var(--mywhite);
+    text-decoration: none;
+}

@@ -11,7 +11,8 @@ import { T1SoundingTheTrumpet1Component } from './components/t1-sounding-the-tru
 
 const appRoutes: Routes = [
   {path: '', component: T1SoundingTheTrumpet1Component},
-  {path: 'about', component: AboutComponent}
+  {path: 'about', component: AboutComponent},
+  {path: 'sounding-the-trumpet-1', component: T1SoundingTheTrumpet1Component}
 ]
 
 @NgModule({

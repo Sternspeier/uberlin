@@ -1,4 +1,4 @@
-/* Pink: R:211 G:65 B:87 or #d34157 maybe change to #ff91af*/
+/* Pink: R:251 G:3 B:143 or #fb038f */
 /* Darkblue: R:11 G:11 B:43 or #0b0b2b*/
 
 :root {
@@ -32,8 +32,8 @@ body {
 }
 
 .content-wrapper {
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-right: 7%;
+    margin-left: 7%;
 }
 
 .text-block {
@@ -108,8 +108,8 @@ body {
 
 .sidebar-menu {
     background-color: var(--myblue);
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-right: 7%;
+    margin-left: 7%;
     box-shadow: 2px 2px 5px black;
 }
 
