@@ -23,7 +23,7 @@ body {
 }
 
 .background {
-    background-image: url(/assets/img/temp_background.jpg);
+    background-image: url(./assets/img/temp_background.jpg);
     height: fit-content;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
