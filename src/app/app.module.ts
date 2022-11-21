@@ -3,27 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { TextloaderComponent } from './components/textloader/textloader.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { TextWrapperComponent } from './components/text-wrapper/text-wrapper.component';
-import { DefaultPageComponent } from './components/default-page/default-page.component';
 import { AboutComponent } from './components/about/about.component';
+import { T1SoundingTheTrumpet1Component } from './components/t1-sounding-the-trumpet1/t1-sounding-the-trumpet1.component';
 
 const appRoutes: Routes = [
-  {path: '', component: DefaultPageComponent},
-  {path: 'about', component: AboutComponent}
+  {path: '', component: T1SoundingTheTrumpet1Component},
+  {path: 'about', component: AboutComponent},
+  {path: 'sounding-the-trumpet-1', component: T1SoundingTheTrumpet1Component}
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    TextloaderComponent,
     HeaderComponent,
     SidebarComponent,
     TextWrapperComponent,
-    DefaultPageComponent,
-    AboutComponent
+    AboutComponent,
+    T1SoundingTheTrumpet1Component
   ],
   imports: [
     BrowserModule,
