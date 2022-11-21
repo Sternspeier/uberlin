@@ -18,7 +18,7 @@ export class TextloaderComponent implements OnInit {
   }
 
   getText() {
-    "/assets/text/sounding_the_trumpet.html"
+    "./assets/text/sounding_the_trumpet.html"
     $("#Content").load( this.textSource );
   }
 
