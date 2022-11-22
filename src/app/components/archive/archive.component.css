@@ -1,0 +1,15 @@
+#text-text dl dd a:link {
+    color: var(--mywhite);
+    text-decoration: none;
+}
+
+#text-text dl dd a:visited {
+    color: var(--mywhite);
+    text-decoration: none;
+}
+
+
+#text-text dl dd a:hover {
+    color: var(--mypink);
+    text-decoration: none;
+}
