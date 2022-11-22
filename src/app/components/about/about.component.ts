@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TrueDateService } from 'src/app/services/true-date.service';
 
 @Component({
   selector: 'app-about',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  tDate: string = this.trueDate.makeDate();
+
+  constructor(private trueDate: TrueDateService) {}
 
   ngOnInit(): void {
   }

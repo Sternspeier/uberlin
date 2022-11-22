@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TrueDateService } from '../../services/true-date.service'
+import { TrueDateService } from 'src/app/services/true-date.service'
 
 @Component({
   selector: 'app-t1-sounding-the-trumpet1',

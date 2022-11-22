@@ -31,16 +31,13 @@ body {
     background-attachment: fixed;
 }
 
-.content-wrapper {
-    margin-right: 7%;
-    margin-left: 7%;
-}
-
 .text-block {
     height: 100%;
-    width: 80%;
+    width: 70%;
     float: left;
-    padding: 0% 0%;
+    padding: 0% 0% 0% 0%;
+    margin-right: 0%;
+    margin-bottom: 5%;
 }
 
 
@@ -54,43 +51,28 @@ body {
     margin-bottom: 0;
 }
 
+
 .text-block section {
     background-color: var(--mygray);
     width: 100%;
     display: block;
     margin: 0 auto;
     padding: 0;
-    padding-bottom: 10px;
+    padding-bottom: 5%;
     box-shadow: 2px 2px 5px black;
 }
 
-.text-block section p {
+#text-text {
+    margin-right: 10%;
+    margin-left: 10%; 
+    color: var(--mywhite)
+}
+
+#text-text p {
     margin-top: 0;
     margin-bottom: 10px;
     padding-top: 1%;
-    margin-right: 10%;
-    margin-left: 10%; 
-    color: var(--mywhite);
-}
-
-
-.navigation-block {
-    background-color: var(--myblue);
-    color: var(--mypink);
-    height: 100%;
-    width: 15%;
-    float: right;
-    padding: 1.5% 1%;
-    box-shadow: 2px 2px 5px black;
-}
-
-.topad p {
-    margin: 20px;
-}
-
-.topad h2 {
-    margin-left: 10%;
-    color: var(--mywhite)
+    font-size: 18px;
 }
 
 /* width for phone screen */
@@ -104,42 +86,6 @@ body {
 .page {
     color: var(--myblue);
 }
-
-
-.sidebar-menu {
-    background-color: var(--myblue);
-    margin-right: 7%;
-    margin-left: 7%;
-    box-shadow: 2px 2px 5px black;
-}
-
-.sidebar-menu ul {
-    list-style-type: none;
-    margin-top: 0;
-}
-
-.sidebar-menu ul li {
-    position: relative;
-    display: inline;
-    margin: 0 0 0 10px;
-}
-
-.sidebar-menu ul li a:link {
-    color: var(--mypink);
-    text-decoration: none;
-}
-
-.sidebar-menu ul li a:visited {
-    color: var(--mypink);
-    text-decoration: none;
-}
-
-
-.sidebar-menu ul li a:hover {
-    color: var(--mywhite);
-    text-decoration: none;
-}
-
 
 .center {
     display: block;

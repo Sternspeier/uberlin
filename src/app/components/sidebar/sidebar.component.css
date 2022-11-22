@@ -1,15 +1,27 @@
-.navigation-block a:link {
-    color: var(--mypink);
-    text-decoration: none;
-}
-
-.navigation-block a:visited {
+.sidebar a:link {
     color: var(--mypink);
     text-decoration: none;
 }
 
 
-.navigation-block a:hover {
+.sidebar a:visited {
+    color: var(--mypink);
+    text-decoration: none;
+}
+
+
+.sidebar a:hover {
     color: var(--mywhite);
     text-decoration: none;
+}
+
+
+.sidebar {
+    background-color: var(--myblue);
+    color: var(--mypink);
+    height: 100%;
+    width: 22%;
+    float: right;
+    padding: 1.5% 1%;
+    box-shadow: 2px 2px 5px black;
 }
