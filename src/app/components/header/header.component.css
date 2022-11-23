@@ -1,19 +1,13 @@
-.navigation-header {
-    background-color: var(--myblue);
-    margin-right: 17%;
-    margin-left: 17%;
-    box-shadow: 2px 2px 5px black;
-}
-
 .navigation-header ul {
     list-style-type: none;
     margin-top: 0;
+    padding: 0;
 }
 
 .navigation-header ul li {
     position: relative;
     display: inline;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 2%;
 }
 
 .navigation-header ul li a:link {
