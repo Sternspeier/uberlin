@@ -1,0 +1,16 @@
+#text-text a:link {
+    color: var(--mywhite);
+    text-decoration: none;
+}
+
+
+#text-text a:visited {
+    color: var(--mywhite);
+    text-decoration: none;
+}
+
+
+#text-text a:hover {
+    color: var(--mypink);
+    text-decoration: none;
+}
