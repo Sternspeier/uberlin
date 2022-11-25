@@ -75,6 +75,12 @@ body {
     font-size: 14px;
 }
 
+.hr-break {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 70%;
+}
+
 /* width for phone screen */
 @media (min-width: 576px) {
 }
