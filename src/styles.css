@@ -6,7 +6,6 @@
     --myblue: #0b0b2b;
     --mygray: #242526;
     --mywhite: #c1e3e6;
-    height: fit-content;
 }
 
 @font-face {
@@ -21,8 +20,14 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-y: auto;
+}
+
 body {
     text-align: justify;
+    overflow-y: auto;
+    height: 100%;
 }
 
 .background {
@@ -31,6 +36,11 @@ body {
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
     background-attachment: fixed;
+}
+
+body div {
+    height: inherit;
+    overflow: unset;
 }
 
 .text-block {
@@ -98,11 +108,6 @@ body {
     font-style: italic;
 }
 
-div.sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-}
 
 .navigation-header {
     background-color: var(--myblue);
@@ -113,11 +118,15 @@ div.sticky {
     box-shadow: 2px 2px 5px black;
 }
 
-.content-wrapper {
+#content-wrapper {
     padding-top: 2%;
     margin-right: 0%;
     margin-left: 0%;
-    /* height: 2000vh; this one will make the sticky property work*/
+    height: 100%;
+}
+
+#content-wrapper div {
+    height: fit-content;
 }
 
 .sidebar {
@@ -130,12 +139,11 @@ div.sticky {
         display: inline;
         background-color: var(--myblue);
         color: var(--mypink);
-        height: 100%;
+        height: fit-content;
         width: 22%;
         float: right;
         padding: 1.5% 1%;
         box-shadow: 2px 2px 5px black;
-        text-align: left;
     }
 
     .text-block {
@@ -160,7 +168,7 @@ div.sticky {
         margin-right: 17%;
         margin-left: 17%;
     }
-    .content-wrapper {
+    #content-wrapper {
         margin-right: 17%;
         margin-left: 17%;
     }
