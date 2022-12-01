@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TrueDateService } from 'src/app/services/true-date.service'
 
 @Component({
-  selector: 'app-t1-sounding-the-trumpet1',
+  selector: 'div[app-t1-sounding-the-trumpet1]',
   templateUrl: './t1-sounding-the-trumpet1.component.html',
   styleUrls: ['./t1-sounding-the-trumpet1.component.css']
 })

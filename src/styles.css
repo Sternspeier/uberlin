@@ -6,6 +6,7 @@
     --myblue: #0b0b2b;
     --mygray: #242526;
     --mywhite: #c1e3e6;
+    height: fit-content;
 }
 
 @font-face {
@@ -14,17 +15,18 @@
 }
 
 * {
-    font-family: OpenDyslexic, sans-serif ; 
+    font-family: OpenDyslexic, sans-serif ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    margin: 0;
     text-align: justify;
 }
 
 .background {
     background-image: url(./assets/img/background_city.png);
-    height: fit-content;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
@@ -81,14 +83,6 @@ body {
     width: 70%;
 }
 
-/* width for phone screen */
-@media (min-width: 576px) {
-}
-
-/* width for regular screen */
-@media (min-width: 1200px) {
-}
-
 .page {
     color: var(--myblue);
 }
@@ -104,6 +98,12 @@ body {
     font-style: italic;
 }
 
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
 .navigation-header {
     background-color: var(--myblue);
     margin-right: 0%;
@@ -114,8 +114,10 @@ body {
 }
 
 .content-wrapper {
+    padding-top: 2%;
     margin-right: 0%;
     margin-left: 0%;
+    /* height: 2000vh; this one will make the sticky property work*/
 }
 
 .sidebar {
@@ -133,6 +135,7 @@ body {
         float: right;
         padding: 1.5% 1%;
         box-shadow: 2px 2px 5px black;
+        text-align: left;
     }
 
     .text-block {

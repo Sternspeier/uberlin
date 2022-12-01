@@ -9,7 +9,6 @@ import { TextWrapperComponent } from './components/text-wrapper/text-wrapper.com
 import { AboutComponent } from './components/about/about.component';
 import { T1SoundingTheTrumpet1Component } from './components/t1-sounding-the-trumpet1/t1-sounding-the-trumpet1.component';
 import { ArchiveComponent } from './components/archive/archive.component';
-import { SettingComponent } from './components/setting/setting.component';
 import { NewsComponent } from './components/news/news.component';
 import { ContactComponent } from './components/contact/contact.component';
 
@@ -31,7 +30,6 @@ const appRoutes: Routes = [
     AboutComponent,
     T1SoundingTheTrumpet1Component,
     ArchiveComponent,
-    SettingComponent,
     NewsComponent,
     ContactComponent
   ],
