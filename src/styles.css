@@ -14,21 +14,33 @@
 }
 
 * {
-    font-family: OpenDyslexic, sans-serif ; 
+    font-family: OpenDyslexic, sans-serif ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: auto;
 }
 
 body {
-    margin: 0;
     text-align: justify;
+    overflow-y: auto;
+    height: 100%;
 }
 
 .background {
     background-image: url(./assets/img/background_city.png);
-    height: fit-content;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
     background-attachment: fixed;
+}
+
+body div {
+    height: inherit;
+    overflow: unset;
 }
 
 .text-block {
@@ -81,14 +93,6 @@ body {
     width: 70%;
 }
 
-/* width for phone screen */
-@media (min-width: 576px) {
-}
-
-/* width for regular screen */
-@media (min-width: 1200px) {
-}
-
 .page {
     color: var(--myblue);
 }
@@ -104,6 +108,7 @@ body {
     font-style: italic;
 }
 
+
 .navigation-header {
     background-color: var(--myblue);
     margin-right: 0%;
@@ -113,9 +118,15 @@ body {
     box-shadow: 2px 2px 5px black;
 }
 
-.content-wrapper {
+#content-wrapper {
+    padding-top: 2%;
     margin-right: 0%;
     margin-left: 0%;
+    height: 100%;
+}
+
+#content-wrapper div {
+    height: fit-content;
 }
 
 .sidebar {
@@ -128,11 +139,12 @@ body {
         display: inline;
         background-color: var(--myblue);
         color: var(--mypink);
-        height: 100%;
+        height: fit-content;
         width: 22%;
         float: right;
         padding: 1.5% 1%;
         box-shadow: 2px 2px 5px black;
+        text-align: left;
     }
 
     .text-block {
@@ -157,7 +169,7 @@ body {
         margin-right: 17%;
         margin-left: 17%;
     }
-    .content-wrapper {
+    #content-wrapper {
         margin-right: 17%;
         margin-left: 17%;
     }

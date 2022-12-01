@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TrueDateService } from 'src/app/services/true-date.service';
 
 @Component({
-  selector: 'app-about',
+  selector: 'div[app-about]',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
