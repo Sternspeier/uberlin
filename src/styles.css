@@ -142,9 +142,13 @@ body div {
         height: fit-content;
         width: 22%;
         float: right;
-        padding: 1.5% 1%;
+        padding: 18px 12px;
         box-shadow: 2px 2px 5px black;
         text-align: left;
+    }
+
+    .sidebar p {
+        padding-bottom: 20px;
     }
 
     .text-block {
