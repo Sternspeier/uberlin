@@ -42,7 +42,7 @@ private repostion(p: string) {
 }
 
 ngOnInit() {
-  this.top = this.el.nativeElement.getBoundingClientRect().y*3.8; //this needs to be better implemented
+  this.top = this.el.nativeElement.getBoundingClientRect().y; //this needs to be better implemented
   this.onScroll();
 }
 
