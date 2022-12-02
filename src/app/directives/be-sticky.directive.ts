@@ -18,19 +18,18 @@ export class BeStickyDirective {
   if (this.top < window.scrollY && !this.isFixed ) {
     this.isFixed = true;
     this.repostion('fixed')
+    this.el.nativeElement.style.top = '2.5%'
     if (window.innerWidth > 1200) {
       this.el.nativeElement.style.width = '14.5%'
       this.el.nativeElement.style.left = '68.5%'
-      this.el.nativeElement.style.top = '2%'
     } else {
       this.el.nativeElement.style.width = '22%'
       this.el.nativeElement.style.right = '0%'
-      this.el.nativeElement.style.top = '2%'
     }
   }
   if (this.top >= window.scrollY && this.isFixed ) {
     this.isFixed = false;
-    this.repostion('relative')
+    this.repostion('absolute')
     this.el.nativeElement.style.width = ''
     this.el.nativeElement.style.height = ''
     this.el.nativeElement.style.left = ''
@@ -43,7 +42,7 @@ private repostion(p: string) {
 }
 
 ngOnInit() {
-  this.top = this.el.nativeElement.getBoundingClientRect().y*3; //this needs to be better implemented
+  this.top = this.el.nativeElement.getBoundingClientRect().y*3.8; //this needs to be better implemented
   this.onScroll();
 }
 
