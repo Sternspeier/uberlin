@@ -11,6 +11,7 @@ import { T1SoundingTheTrumpet1Component } from './components/t1-sounding-the-tru
 import { ArchiveComponent } from './components/archive/archive.component';
 import { NewsComponent } from './components/news/news.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { BeStickyDirective } from './directives/be-sticky.directive';
 
 const appRoutes: Routes = [
   {path: '', component: T1SoundingTheTrumpet1Component},
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
     T1SoundingTheTrumpet1Component,
     ArchiveComponent,
     NewsComponent,
-    ContactComponent
+    ContactComponent,
+    BeStickyDirective,
   ],
   imports: [
     BrowserModule,
