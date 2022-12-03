@@ -16,6 +16,7 @@ export class BeStickyDirective {
 
 @HostListener('window:scroll', ['$event'])onScroll(){
   if (this.top < window.scrollY && !this.isFixed ) {
+    console.log(window.scrollY)
     this.isFixed = true;
     this.repostion('fixed')
     this.el.nativeElement.style.top = '2.5%'
@@ -42,7 +43,8 @@ private repostion(p: string) {
 }
 
 ngOnInit() {
-  this.top = this.el.nativeElement.getBoundingClientRect().y; //this needs to be better implemented
+  var rect = this.el.nativeElement.getBoundingClientRect(); //this needs to be better implemented
+  this.top = rect.bottom
   this.onScroll();
 }
 
