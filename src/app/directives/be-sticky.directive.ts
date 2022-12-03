@@ -1,4 +1,4 @@
-import { Directive, ElementRef, HostListener, Input, OnInit } from '@angular/core';
+import { Directive, ElementRef, HostListener, Renderer2 } from '@angular/core';
 
 @Directive({
   selector: '[appBeSticky]'
@@ -11,15 +11,15 @@ export class BeStickyDirective {
   windowWidth: number = 0;
 
 	constructor(
-		private el: ElementRef
+		private el: ElementRef,
+    private render: Renderer2
 	) {}
 
 @HostListener('window:scroll', ['$event'])onScroll(){
   if (this.top < window.scrollY && !this.isFixed ) {
-    console.log(window.scrollY)
     this.isFixed = true;
     this.repostion('fixed')
-    this.el.nativeElement.style.top = '2.5%'
+    this.el.nativeElement.style.top = '2%'
     if (window.innerWidth > 1200) {
       this.el.nativeElement.style.width = '14.5%'
       this.el.nativeElement.style.left = '68.5%'
@@ -43,8 +43,10 @@ private repostion(p: string) {
 }
 
 ngOnInit() {
-  var rect = this.el.nativeElement.getBoundingClientRect(); //this needs to be better implemented
-  this.top = rect.bottom
+  this.render.listen('window', 'load', () => {
+    var rect = this.el.nativeElement.getBoundingClientRect(); //this needs to be better implemented
+    this.top = rect.y;
+  })
   this.onScroll();
 }
 
