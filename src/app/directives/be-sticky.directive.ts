@@ -38,14 +38,25 @@ export class BeStickyDirective {
   }
 }
 
+@HostListener('window:resize', ['$event'])onResize(){
+  this.render.listen('window', 'load', () => {
+    this.getTop();
+  })
+  console.log(this.top)
+}
+
 private repostion(p: string) {
   this.el.nativeElement.style.position = p;
 }
 
+private getTop() {
+  var rect = this.el.nativeElement.getBoundingClientRect(); //this needs to be better implemented
+  this.top = rect.y;
+}
+
 ngOnInit() {
   this.render.listen('window', 'load', () => {
-    var rect = this.el.nativeElement.getBoundingClientRect(); //this needs to be better implemented
-    this.top = rect.y;
+    this.getTop();
   })
   this.onScroll();
 }
