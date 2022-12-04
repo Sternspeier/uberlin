@@ -31,6 +31,7 @@ body {
 }
 
 .background {
+    background-color: #0b0b2b;
     background-image: url(./assets/img/background_city.png);
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
