@@ -38,12 +38,12 @@ export class BeStickyDirective {
   }
 }
 
-@HostListener('window:resize', ['$event'])onResize(){
-  this.render.listen('window', 'load', () => {
-    this.getTop();
-  })
-  console.log(this.top)
-}
+// doesn't seem to work :/
+// @HostListener('window:resize', ['$event'])onResize(){
+//   this.render.listen('window', 'load', () => {
+//     this.getTop();
+//   })
+// }
 
 private repostion(p: string) {
   this.el.nativeElement.style.position = p;

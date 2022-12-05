@@ -12,6 +12,7 @@ import { ArchiveComponent } from './components/archive/archive.component';
 import { NewsComponent } from './components/news/news.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { BeStickyDirective } from './directives/be-sticky.directive';
+import { T2SoundingTheTrumpet2Component } from './components/t2-sounding-the-trumpet2/t2-sounding-the-trumpet2.component';
 
 const appRoutes: Routes = [
   {path: '', component: T1SoundingTheTrumpet1Component},
@@ -19,7 +20,8 @@ const appRoutes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'archive', component: ArchiveComponent},
   {path: 'news', component: NewsComponent},
-  {path: 'sounding-the-trumpet-1', component: T1SoundingTheTrumpet1Component}
+  {path: 'sounding-the-trumpet-1', component: T1SoundingTheTrumpet1Component},
+  {path: 'sounding-the-trumpet-2', component: T2SoundingTheTrumpet2Component},
 ]
 
 @NgModule({
@@ -34,6 +36,7 @@ const appRoutes: Routes = [
     NewsComponent,
     ContactComponent,
     BeStickyDirective,
+    T2SoundingTheTrumpet2Component,
   ],
   imports: [
     BrowserModule,
