@@ -88,6 +88,32 @@ body div {
     font-size: 14px;
 }
 
+#text-text .continuelink {
+    float: right;
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+.continuelink:link {
+    color: var(--mypink);
+    text-decoration: none;
+}
+
+
+.continuelink:visited {
+    color: var(--mypink);
+    text-decoration: none;
+}
+
+
+.continuelink:hover {
+    color: var(--mywhite);
+    text-decoration: none;
+}
+
+
+
+
 .hr-break {
     margin-top: 50px;
     margin-bottom: 50px;
