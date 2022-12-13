@@ -88,6 +88,58 @@ body div {
     font-size: 14px;
 }
 
+
+#mblinks {
+    display: block;
+    padding-bottom: 60px;
+    font-size: 20px;
+}
+
+#mblinks #mbleft {
+    float: left;
+    margin-left: 7%;
+}
+
+#mblinks #mbright {
+    float: right;
+    margin-right: 7%;
+}
+
+#mblinks div {
+    padding-bottom: 30px;
+}
+
+.mbbreak {
+
+    align-self: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.nolink {
+    color: black;
+}
+
+.islink:link {
+    color: var(--mypink);
+    text-decoration: none;
+}
+
+
+.islink:visited {
+    color: var(--mypink);
+    text-decoration: none;
+}
+
+
+.islink:hover {
+    color: var(--mywhite);
+    text-decoration: none;
+}
+
 .hr-break {
     align-self: center;
     margin-right: auto;
@@ -174,12 +226,12 @@ body div {
 
     .sidebar #nextlink {
         float: right;
-        padding-right: 10%;
+        padding-right: 7%;
     }
 
     .sidebar #prevlink {
         float: left;
-        padding-left: 10%;
+        padding-left: 7%;
 
     }
 
@@ -196,6 +248,10 @@ body div {
     
     #text-text p {
         font-size: 18px;
+    }
+
+    #mblinks {
+        display: none;
     }
 }
 
