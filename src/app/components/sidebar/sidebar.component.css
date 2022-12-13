@@ -15,3 +15,8 @@
     text-decoration: none;
 }
 
+a.disabled {
+    color: var(--mygray)!important;
+    pointer-events: none;
+    cursor: default;
+}

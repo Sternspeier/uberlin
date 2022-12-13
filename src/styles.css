@@ -65,7 +65,7 @@ body div {
 }
 
 
-.text-block section {
+#content {
     background-color: var(--mygray);
     width: 100%;
     display: block;
@@ -88,33 +88,10 @@ body div {
     font-size: 14px;
 }
 
-#text-text .continuelink {
-    float: right;
-    margin-bottom: 10px;
-    font-size: large;
-}
-
-.continuelink:link {
-    color: var(--mypink);
-    text-decoration: none;
-}
-
-
-.continuelink:visited {
-    color: var(--mypink);
-    text-decoration: none;
-}
-
-
-.continuelink:hover {
-    color: var(--mywhite);
-    text-decoration: none;
-}
-
-
-
-
 .hr-break {
+    align-self: center;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 50px;
     margin-bottom: 50px;
     width: 70%;
@@ -172,11 +149,38 @@ body div {
         position: absolute;
         padding: 18px 12px;
         box-shadow: 2px 2px 5px black;
-        text-align: left;
+        text-align: center;
     }
 
     .sidebar p {
-        padding-bottom: 20px;
+        padding-bottom: 5px;
+    }
+
+    .sidebar div {
+        margin-bottom: 20px;
+    }
+
+    .sidebar .sidebarbreak {
+        display: block;
+        align-self: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        width: 70%;
+        border: 0px;
+        border-top: 1px solid var(--mygray);
+    }
+
+    .sidebar #nextlink {
+        float: right;
+        padding-right: 10%;
+    }
+
+    .sidebar #prevlink {
+        float: left;
+        padding-left: 10%;
+
     }
 
     .text-block {

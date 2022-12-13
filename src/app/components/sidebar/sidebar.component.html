@@ -1,4 +1,9 @@
     <div appBeSticky class="sidebar">
+        <div>
+            <a routerLink="{{ prevLink }}" [class.disabled]="p_disabled ? true : null" id="prevlink">&#x2190; PREV</a>
+            <a routerLink="{{ nextLink }}" [class.disabled]="n_disabled ? true : null"id="nextlink">NEXT &#x2192;</a>
+        </div>
+        <hr class="sidebarbreak">
         <p>RECENT STORIES</p>
         <a routerLink="/sounding-the-trumpet-1">Sounding the Trumpet 1</a>
     </div>
