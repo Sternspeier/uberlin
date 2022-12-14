@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router, NavigationEnd} from '@angular/router';
 import { BuildLinksService } from 'src/app/services/build-links.service'
 
@@ -10,31 +10,30 @@ import { BuildLinksService } from 'src/app/services/build-links.service'
 })
 export class SidebarComponent implements OnInit {
 
-  name = 'sidebar'
+  name = ''
   num = 0
 
   p_disabled = false
   n_disabled = false
 
-  prevLink = ''
+  @Input() prevLink = ''
   nextLink = ''
 
   constructor(private router: Router, private bLink: BuildLinksService) {
     this.router.events.subscribe((ev) => {
-      if (ev instanceof NavigationEnd) { setTimeout(() => {
+      if (ev instanceof NavigationEnd) {
+        setTimeout(() => {
         this.name = this.bLink.s_name
         this.num = this.bLink.s_num
-        if(this.name != '' && this.num != 0){
-          this.makeLinks()
-        }
-      }, 10);
+        this.makeLinks()
+      }, 0);
     }
     });
   }
 
 
   ngOnInit(): void {
-    }
+  }
 
   makeLinks(){
 
@@ -45,12 +44,10 @@ export class SidebarComponent implements OnInit {
       this.p_disabled = true;
     } else {
       this.p_disabled = false;
-      console.log('Route found');
     }
 
     if(this.bLink.s_end) {
       this.n_disabled = true;
-      console.log('Route not found, redirection stopped with no error raised');
     } else {
       this.n_disabled = false;
     }

@@ -109,36 +109,15 @@ body div {
     padding-bottom: 30px;
 }
 
-.mbbreak {
 
-    align-self: center;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 50px;
-    margin-bottom: 0px;
-    width: 100%;
-}
-
-.nolink {
-    color: black;
-}
-
-.islink:link {
-    color: var(--mypink);
+a.disabled {
+    color: grey!important;
+    pointer-events: none;
+    cursor: default;
     text-decoration: none;
 }
 
 
-.islink:visited {
-    color: var(--mypink);
-    text-decoration: none;
-}
-
-
-.islink:hover {
-    color: var(--mywhite);
-    text-decoration: none;
-}
 
 .hr-break {
     align-self: center;
@@ -171,7 +150,10 @@ body div {
     margin-left: 0%;
     padding-left: 3%;
     padding-right: 3%;
+    padding-top: 5px;
+    padding-bottom: 5px;
     box-shadow: 2px 2px 5px black;
+    font-size: 20px;
 }
 
 #content-wrapper {

@@ -1,0 +1,29 @@
+
+.mbbreak {
+
+    align-self: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+
+.islink:link {
+    color: var(--mypink);
+    text-decoration: none;
+}
+
+
+.islink:visited {
+    color: var(--mypink);
+    text-decoration: none;
+}
+
+
+.islink:hover {
+    color: var(--mywhite);
+    text-decoration: none;
+}
+
