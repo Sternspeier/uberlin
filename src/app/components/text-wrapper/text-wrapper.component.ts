@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'div[app-text-wrapper]',
@@ -6,7 +6,6 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./text-wrapper.component.css']
 })
 export class TextWrapperComponent implements OnInit {
-  @Input() twTextSource: string = "";
 
   constructor() { }
 

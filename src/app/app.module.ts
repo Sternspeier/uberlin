@@ -13,6 +13,7 @@ import { NewsComponent } from './components/news/news.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { BeStickyDirective } from './directives/be-sticky.directive';
 import { T2SoundingTheTrumpet2Component } from './components/t2-sounding-the-trumpet2/t2-sounding-the-trumpet2.component';
+import { TextComponent } from './components/text/text.component';
 
 const appRoutes: Routes = [
   {path: '', component: T1SoundingTheTrumpet1Component},
@@ -37,6 +38,7 @@ const appRoutes: Routes = [
     ContactComponent,
     BeStickyDirective,
     T2SoundingTheTrumpet2Component,
+    TextComponent,
   ],
   imports: [
     BrowserModule,
