@@ -1,0 +1,7 @@
+<div id="mblinks">
+    <div>
+    <a id="mbleft" class="islink" [class.disabled]="(c_num-1 < 1) ? true : null" routerLink="/{{c_name}}-{{(c_num - 1)}}"> &#x2190; PREV</a>
+    <a id="mbright" class="islink" [class.disabled]="(c_end) ? true : null" routerLink="/{{c_name}}-{{(c_num + 1)}}">NEXT &#x2192;</a>
+    </div>
+    <hr class="mbbreak">
+</div>

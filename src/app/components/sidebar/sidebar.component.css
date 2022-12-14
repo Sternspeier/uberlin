@@ -14,9 +14,3 @@
     color: var(--mywhite);
     text-decoration: none;
 }
-
-a.disabled {
-    color: grey!important;
-    pointer-events: none;
-    cursor: default;
-}
