@@ -38,19 +38,16 @@ export class BeStickyDirective {
   }
 }
 
-// doesn't seem to work :/
-// @HostListener('window:resize', ['$event'])onResize(){
-//   this.render.listen('window', 'load', () => {
-//     this.getTop();
-//   })
-// }
+@HostListener('window:resize', ['$event'])onResize(){
+  this.getTop()
+}
 
 private repostion(p: string) {
   this.el.nativeElement.style.position = p;
 }
 
 private getTop() {
-  var rect = this.el.nativeElement.getBoundingClientRect(); //this needs to be better implemented
+  var rect = this.el.nativeElement.getBoundingClientRect();
   this.top = rect.y;
 }
 
@@ -59,6 +56,7 @@ ngOnInit() {
     this.getTop();
   })
   this.onScroll();
+  this.onResize();
 }
 
 }

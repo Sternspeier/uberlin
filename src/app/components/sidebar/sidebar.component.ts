@@ -21,7 +21,8 @@ export class SidebarComponent implements OnInit {
 
   constructor(private router: Router, private bLink: BuildLinksService) {
     this.router.events.subscribe((ev) => {
-      if (ev instanceof NavigationEnd) { setTimeout(() => {
+      if (ev instanceof NavigationEnd) {
+        setTimeout(() => {
         this.name = this.bLink.s_name
         this.num = this.bLink.s_num
         this.makeLinks()
